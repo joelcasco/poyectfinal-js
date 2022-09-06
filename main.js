@@ -40,7 +40,7 @@ boton.addEventListener("click", (e) => {
   let usuario = document.getElementById("usuario").value;
   let pass = document.getElementById("pass").value;
 
-  if (usuario == "Jose" && pass == "1234") {
+  if (usuario == "Joel" && pass == "1122") {
     window.location.href = "welcome.html";
     localStorage.setItem("nombre", usuario)
   } else {
