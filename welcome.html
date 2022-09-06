@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+        <label>dolar oficial</label>
+        <input id="num1" type="number" placeholder="ingrese un numero">
+        <p>dolar oficial <br> sin inpuestos 157,86</p>
+        <button id="calcDlr">Calcular</button>
+        <p>Resultado: <span id="rtaDlr">...</span></p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <label>dolar blue</label>
+        <input id="num2" type="number" placeholder="ingrese un numero">
+        <p>295 </p>
+        <button onclick="" id="calcBlue">Calcular</button>
+        <p>Resultado: <span id="rtaBlue">...</span></p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <label>euro</label>
+        <input id="num3" type="number" placeholder="ingrese un numero">
+        <p>137,08 <br>sin impuestos</p>
+        <button onclick="" id="calcEur">Calcular</button>
+        <p>Resultado: <span id="rtaEur">...</span></p>
+    </fieldset>
+
+    <section class="border-grey">
+        <div>
+        
+        <form  id="formulario" >
+            <h2 class="tituloForm text-center text-primary">Queremos conocerte</h2>
+        <input type="text" name="nombre" placeholder="ingrese su nombre" id="usuario">
+        <input type="number" name="edad" placeholder="ingrese sus edad" id="clave" >
+        <button class="btn - btn-primary" type="submit">Mostrar datos</button>
+        </form>
+        <h3 id="respuesta" class="text-center"></h3>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
