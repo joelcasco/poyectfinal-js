@@ -1,4 +1,4 @@
-//declaramos las variables
+// // declaramos las variables
 // let formulario = document.getElementById("login");
 // let resultado = document.querySelector('#error');
 // //creo una class para obtener los datos de los usuarios
@@ -34,7 +34,7 @@
 // console.log(formulario)
 
 let boton = document.getElementById("entrar");
-let resultado = document.querySelector('#error');
+let fail = document.querySelector('#fail');
 boton.addEventListener("click", (e) => {
   e.preventDefault();
   let usuario = document.getElementById("usuario").value;
@@ -44,7 +44,17 @@ boton.addEventListener("click", (e) => {
     window.location.href = "welcome.html";
     localStorage.setItem("nombre", usuario)
   } else {
-    resultado.innerHTML = `<p> acceso incorrecto, revise sus datos</p>`
-     
+    // fail.innerHTML = `<p> acceso incorrecto, revise sus datos</p>`
+    Swal.fire({
+      title: "Error!",
+      text: "datos ingresados no validos, vuelve a ingresarlos conrrectamente",
+      icon: "warning",
+      confirmButtonText: "Aceptar",
+      padding: "2em",
+      background: "	#FF0000",
+      confirmButtonColor: "	#000000",
+      allowOutsideClick: false,
+      showCloseButton: true,
+    })
   }
 })

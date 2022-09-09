@@ -31,7 +31,9 @@ const formulario = document.querySelector("#formulario");
 console.log(formulario)
 //crear el evento para que escuche el submit y nombro la funcion
 
-formulario.addEventListener("submit", enviarFormulario);
+formulario.addEventListener("submit", (e) =>{
+    emviarFormulario(e)
+});
 
 function enviarFormulario (e){
     e.preventDefault()
